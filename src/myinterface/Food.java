@@ -18,5 +18,7 @@ public interface Food {
     public abstract double getCaloriesInObject();
 
     public abstract void setCaloriesInObject(double caloriesInObject);
+    
+    public abstract void displayNutrientBreakdownOfFood();
 
 }

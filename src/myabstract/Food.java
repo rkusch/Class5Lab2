@@ -10,6 +10,25 @@ package myabstract;
  *
  * @author rkusch
  */
-public class Food {
-    
+public abstract class Food {
+     private double caloriesInObject;
+     private String foodCategory;
+
+    public double getCaloriesInObject() {
+        return caloriesInObject;
+    }
+
+    public void setCaloriesInObject(double caloriesInObject) {
+        this.caloriesInObject = caloriesInObject;
+    }
+
+    public String getFoodCategory() {
+        return foodCategory;
+    }
+
+    public void setFoodCategory(String foodCategory) {
+        this.foodCategory = foodCategory;
+    }
+     
+     public abstract void displayNutrientBreakdownOfFood();
 }

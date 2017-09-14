@@ -5,11 +5,28 @@
  */
 package myabstract;
 
-
 /**
  *
  * @author rkusch
  */
-public class Potato {
-    
+public class Potato extends Vegetable {
+
+    private String potatoCategory;
+
+    public String getPotatoCategory() {
+        return potatoCategory;
+    }
+
+    public void setPotatoCategory(String potatoCategory) {
+        this.potatoCategory = potatoCategory;
+    }
+
+    //this output should be in a seperate class
+    @Override
+    public void displayNutrientBreakdownOfFood() {
+        System.out.println("Food Category: " + getFoodCategory());
+        System.out.println("Vegetable Category: " + getVegetableCategory());
+        System.out.println("Potato Category: " + getPotatoCategory());
+        System.out.println("Calories: " + getCaloriesInObject());
+    }
 }

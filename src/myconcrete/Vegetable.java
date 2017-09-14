@@ -5,14 +5,14 @@
  */
 package myconcrete;
 
-
 /**
  *
  * @author rkusch
  */
 public class Vegetable extends Food {
-    
+
     private String vegetableCategory;
+    private String colorOfVegetable;
 
     public String getVegetableCategory() {
         return vegetableCategory;
@@ -21,7 +21,21 @@ public class Vegetable extends Food {
     public void setVegetableCategory(String vegetableCategory) {
         this.vegetableCategory = vegetableCategory;
     }
-    
-    
-    
+
+    public String getColorOfVegetable() {
+        return colorOfVegetable;
+    }
+
+    public void setColorOfVegetable(String colorOfVegetable) {
+        this.colorOfVegetable = colorOfVegetable;
+    }
+
+    //this output should be in a seperate class
+    @Override
+    public void displayNutrientBreakdownOfFood() {
+        System.out.println("Food Category: " + getFoodCategory());
+        System.out.println("Vegetable Category: " + getVegetableCategory());
+        System.out.println("Calories: " + getCaloriesInObject());
+    }
+
 }

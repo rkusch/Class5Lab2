@@ -10,15 +10,29 @@ package myconcrete;
  * @author rkusch
  */
 public class Food {
-    private double calories;
 
-    public double getCalories() {
-        return calories;
+    private double caloriesInObject;
+    private String foodCategory;
+
+    public double getCaloriesInObject() {
+        return caloriesInObject;
     }
 
-    public void setCalories(double calories) {
-        this.calories = calories;
+    public void setCaloriesInObject(double caloriesInObject) {
+        this.caloriesInObject = caloriesInObject;
     }
-    
-    
+
+    public String getFoodCategory() {
+        return foodCategory;
+    }
+
+    public void setFoodCategory(String foodCategory) {
+        this.foodCategory = foodCategory;
+    }
+
+    public void displayNutrientBreakdownOfFood() {
+        System.out.println("Food Category: " + getFoodCategory());
+        System.out.println("Calories: " + getCaloriesInObject());
+    }
+
 }

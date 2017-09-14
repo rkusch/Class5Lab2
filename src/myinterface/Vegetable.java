@@ -14,6 +14,7 @@ public abstract class Vegetable implements Food {
     private double caloriesInObject;
     private String foodCategory;
     private String vegetableCategory;
+    private String colorOfVegetable;
 
     @Override
     public double getCaloriesInObject() {
@@ -26,13 +27,21 @@ public abstract class Vegetable implements Food {
     }
 
     @Override
-    public String getFoodCategory(){
+    public String getFoodCategory() {
         return foodCategory;
     }
 
     @Override
-    public void setFoodCategory(String foodCategory){
+    public void setFoodCategory(String foodCategory) {
         this.foodCategory = foodCategory;
+    }
+
+    //this output should be in a seperate class
+    @Override
+    public void displayNutrientBreakdownOfFood() {
+        System.out.println("Food Category: " + getFoodCategory());
+        System.out.println("Vegetable Category: " + getVegetableCategory());
+        System.out.println("Calories: " + getCaloriesInObject());
     }
 
     public String getVegetableCategory() {
@@ -41,6 +50,14 @@ public abstract class Vegetable implements Food {
 
     public void setVegetableCategory(String vegetableCategory) {
         this.vegetableCategory = vegetableCategory;
+    }
+
+    public String getColorOfVegetable() {
+        return colorOfVegetable;
+    }
+
+    public void setColorOfVegetable(String colorOfVegetable) {
+        this.colorOfVegetable = colorOfVegetable;
     }
 
 }
