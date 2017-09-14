@@ -35,6 +35,7 @@ public class Vegetable extends Food {
     public void displayNutrientBreakdownOfFood() {
         System.out.println("Food Category: " + getFoodCategory());
         System.out.println("Vegetable Category: " + getVegetableCategory());
+        System.out.println("Vegetable Color: " + getColorOfVegetable());
         System.out.println("Calories: " + getCaloriesInObject());
     }
 
