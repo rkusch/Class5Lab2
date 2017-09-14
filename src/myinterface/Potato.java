@@ -21,4 +21,14 @@ public class Potato extends Vegetable {
         this.potatoCategory = potatoCategory;
     }
 
+    //this output should be in a seperate class
+    @Override
+    public void displayNutrientBreakdownOfFood() {
+        System.out.println("Food Category: " + getFoodCategory());
+        System.out.println("Vegetable Category: " + getVegetableCategory());
+        System.out.println("Vegetable Color: " + getColorOfVegetable());
+        System.out.println("Potato Category: " + getPotatoCategory());
+        System.out.println("Calories: " + getCaloriesInObject());
+    }
+
 }

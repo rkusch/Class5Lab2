@@ -11,7 +11,7 @@ package myconcrete;
  * @author rkusch
  */
 public class Potato extends Vegetable {
-    private String potatoCategory;
+private String potatoCategory;
 
     public String getPotatoCategory() {
         return potatoCategory;
@@ -19,6 +19,16 @@ public class Potato extends Vegetable {
 
     public void setPotatoCategory(String potatoCategory) {
         this.potatoCategory = potatoCategory;
+    }
+
+    //this output should be in a seperate class
+    @Override
+    public void displayNutrientBreakdownOfFood() {
+        System.out.println("Food Category: " + getFoodCategory());
+        System.out.println("Vegetable Category: " + getVegetableCategory());
+        System.out.println("Vegetable Color: " + getColorOfVegetable());
+        System.out.println("Potato Category: " + getPotatoCategory());
+        System.out.println("Calories: " + getCaloriesInObject());
     }
     
     
